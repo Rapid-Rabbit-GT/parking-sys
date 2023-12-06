@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>login form</title>
+	<meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+	<meta name='viewport' content='width=device-width, initial-scale=1.0'>
+	<link rel='stylesheet' type='text/css' href='CSS/mainStyle.css'>	
+	<style>	
+		.second-div{
+			width: 50%;
+		}
+		.conerRoundTable{
+			width: 50%;
+		}
+		.form-row-names{
+			text-align: right;
+		}
+		.input-area{
+			box-sizing: border-box;
+		}	
+		.inputTypeText{
+			margin-left: 5px;
+			padding: 5px 5px;
+			max-width: 100%;
+			
+		}
+		/*	Responsive	======================================*/
+		@media (max-width:720px) {
+            .second-div{
+				width: 80%;
+			}
+			.conerRoundTable{
+				width: 70%;
+			}
+        }
+        @media (max-width:450px) {
+            .second-div{
+				width: 99%;
+			}
+			.conerRoundTable{
+				width: 90%;
+			}
+			.second-div{
+				padding: 30px 5px;
+			}
+        }
+	</style>
+</head>
+
+<body>
+	<table width='100%' ><tr><td align='right'>
+		<button class='default-button' id='userInterfaceThemeIcon'>Dark</button>
+	</td></tr></table><br>
+	<center>
+	<div class='second-div default-shadow'>
+		<h1>Parking system Login From</h1>
+
+		<form name='loginform' action='login.php' method='post'>
+			<table class='conerRoundTable default-shadow'>
+				<tr>
+					<th class='form-row-names'>User id </th>
+					<td class="input-area"><input class='inputTypeText' type='text' name='userId' required></td>
+				</tr>
+				<tr>
+					<th class='form-row-names'>User name </th>
+					<td><input class='inputTypeText' type='text' name='userName' required></td>
+				</tr>
+				<tr>
+					<th class='form-row-names'>Password </th>
+					<td><input class='inputTypeText' type='password' name='password' required></td>
+				</tr>
+			</table>
+			<br>
+			<button class='default-button' type='submit'>Log in</button>
+		</form>
+		<div class='mid-space-div'></div>
+
+		If you are not registered?
+		<a href='User-Registration/form.php' class='textLinks'>Click to here</a>
+	</div>
+	</center>
+	<div class='bottom-div'></div>
+
+	<script src='Javascript/main.js'></script>
+	<script type='text/javascript'>
+		themeSettingWithButton();
+	</script>
+</body>
+
+</html>

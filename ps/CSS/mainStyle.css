@@ -1,0 +1,308 @@
+.disclaimer {
+	display: none;
+}
+img[src="https://cdn.000webhost.com/000webhost/logo/footer-powered-by-000webhost-white2.png"] {
+    display: none;
+}
+a[title="Hosted on free web hosting 000webhost.com. Host your own website for FREE."]{
+     display: none;
+}
+
+/*================================================================================================*/
+
+:root{
+	--primary-color: black;
+	--background-color: #8b9ec1;
+	--primary-font-family: Times New Roman;
+
+	--main-div-background-color: #8b9ec1;
+	--second-div-background-color: #ACB9D2;
+	--third-div-background-color: #eef1f6;
+
+	--textLinks-a-color: blue;
+	--textLinks-a-visited-color: blue;
+	--textLinks-a-hover-color: red;
+
+	--conerRoundTable-border-color: #eef1f6;
+	--conerRoundTable-background-color: #eef1f6;
+	--conerRoundTh-border-color: #eef1f6;
+	--conerRoundTh-background-color: #eef1f6;
+	--conerRoundTd-border-color: #eef1f6;
+	--conerRoundTd-background-color: #eef1f6;
+
+	--default-button-color: black;
+	--default-button-background-color: #cdd5e4;
+	--default-button-border-color: #cdd5e4;
+	--default-button-hover-color: black;
+	--default-button-hover-background-color: white;
+	--default-button-hover-border-color: white;
+
+	--normal-button-color: white;
+	--normal-button-background-color: black;
+	--normal-button-border-color: black;
+	--normal-button-hover-color: black;
+	--normal-button-hover-background-color: white;
+	--normal-button-hover-border-color: black;
+
+	--inputTypeText-color: black;
+	--inputTypeText-background-color: white;
+	--inputTypeText-border-color: #5974a6;
+	--inputTypeText-change-border-color: white;
+	--inputTypeText-focus-color: black;
+	--inputTypeText-focus-background-color: white;
+	--inputTypeText-focus-border-color: black;
+
+	--inputTypeSelect-color: black;
+	--inputTypeSelect-background-color: white;
+	--inputTypeSelect-border-color: #5974a6;
+	--inputTypeSelect-change-border-color: white;
+	--inputTypeSelect-focus-color: black;
+	--inputTypeSelect-focus-background-color: white;
+	--inputTypeSelect-focus-border-color: black;
+
+}
+
+/*===================================================================================================*/
+
+.userThemeDark{
+	--primary-color: white;
+	--background-color: #445760;
+	--primary-font-family: sans-serif;
+
+	--main-div-background-color: #445760;
+	--second-div-background-color: #556c77;
+	--third-div-background-color: #5f7a86;
+
+	--textLinks-a-color: skyblue;
+	--textLinks-a-visited-color: skyblue;
+	--textLinks-a-hover-color: gold;
+
+	--conerRoundTable-border-color: #5f7a86;
+	--conerRoundTable-background-color: #5f7a86;
+	--conerRoundTh-border-color: #5f7a86;
+	--conerRoundTh-background-color: #5f7a86;
+	--conerRoundTd-border-color: #5f7a86;
+	--conerRoundTd-background-color: #5f7a86;
+
+	--default-button-color: white;
+	--default-button-background-color: #5f7a86;
+	--default-button-border-color: #5f7a86;
+	--default-button-hover-color: black;
+	--default-button-hover-background-color: white;
+	--default-button-hover-border-color: white;
+
+	--normal-button-color: white;
+	--normal-button-background-color: black;
+	--normal-button-border-color: black;
+	--normal-button-hover-color: black;
+	--normal-button-hover-background-color: white;
+	--normal-button-hover-border-color: black;
+
+	--inputTypeText-color: white;
+	--inputTypeText-background-color: #4a5f68;
+	--inputTypeText-border-color: black;
+	--inputTypeText-change-border-color: #4a5f68;
+	--inputTypeText-focus-color: black;
+	--inputTypeText-focus-background-color: white;
+	--inputTypeText-focus-border-color: white;
+
+	--inputTypeSelect-color: white;
+	--inputTypeSelect-background-color: #4a5f68;
+	--inputTypeSelect-border-color: black;
+	--inputTypeSelect-change-border-color: #4a5f68;
+	--inputTypeSelect-focus-color: black;
+	--inputTypeSelect-focus-background-color: white;
+	--inputTypeSelect-focus-border-color: white;
+}
+
+/*======MAIN BODY====================================================================================*/
+
+body {
+	position: relative;
+	color: var(--primary-color);
+	background-color: var(--background-color);
+	box-sizing: border-box;
+	font-family: var(--primary-font-family);
+  	font-size: 90%;	
+}
+#nav-bar{
+	width: 100%;
+	display: flex;
+	margin-bottom: 8px;
+}
+#nav-bar #nav-bar-left{
+	flex: auto;
+	text-align: left;
+}
+#nav-bar #nav-bar-right{
+	flex: auto;
+	text-align: right;
+}
+
+.main-div{
+	background-color: var(--main-div-background-color);
+	width: 100%;
+	margin-top: 5px;
+	padding: 40px 5px;
+	border-radius: 10px;
+	box-sizing: border-box;
+	
+}
+.second-div{
+	background-color: var(--second-div-background-color);
+	width: fit-content;
+	min-width: 25%;
+	padding: 30px;
+	border-radius: 10px;
+	box-sizing: border-box;
+}
+.third-div{
+	background-color: var(--third-div-background-color);
+	width: fit-content;
+	padding: 10px 30px;
+	border-radius: 10px;
+	box-sizing: border-box;
+}
+button {
+    font-family: sans-serif;
+}
+
+/*===================================================================================================*/
+
+.align-right {
+	text-align: right;
+}
+
+.align-left {
+	text-align: left;
+}
+
+.min-space-div{
+	margin-top: 25px; 
+}
+.mid-space-div{
+	margin-top: 40px;
+}
+.bottom-div{
+	margin-top: 100px;
+}
+
+/*=======LINKS===========================================================================================*/
+
+.textLinks{
+	color: var(--textLinks-a-color);
+}
+.textLinks:visited {
+	color: var(--textLinks-a-visited-color);
+}
+.textLinks:hover {
+	color: var(--textLinks-a-hover-color);
+}
+
+/*======TABLE STYLE===================================================================================*/
+
+.conerRoundTable {
+	padding: 20px;
+	border-radius: 10px;
+	background-color: var(--conerRoundTable-background-color);
+	
+}
+
+.conerRoundTh {
+	padding: 10px;
+	border-radius: 10px;
+	background-color: var(--conerRoundTh-background-color);
+}
+
+.conerRoundTd {
+	padding: 10px;
+	border-radius: 10px;
+	background-color: var(--conerRoundTd-background-color);
+}
+
+/* default frame style --------------------*/
+
+/*.default-main-frame {
+	position: relative;
+	width: 99%;
+	padding: 20px 10px 60px 10px;
+	margin-top: 10px;
+	border-radius: 20px;
+	box-sizing: border-box;
+	overflow: hidden;			
+}*/
+
+/*=======BUTTONS=========================================================================================*/
+
+.default-button {
+	padding: 5px 10px;
+	color: var(--default-button-color);
+	background-color: var(--default-button-background-color);
+	border: 5px solid var(--default-button-border-color);
+	border-radius: 4px;
+
+	transition-duration: 0.4s;
+	transition: all 0.4 ease 0s;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19) ;
+	cursor: pointer;
+}
+
+.default-button:hover {
+	color: var(--default-button-hover-color);
+	background-color: var(--default-button-hover-background-color);
+	border-color: var(--default-button-hover-border-color);           /*#4CAF50*/
+
+	/*box-shadow: 0 4px 8px 0 rgba(76, 175, 80, 0.2),0 6px 20px 0 rgba(76, 175, 80, 0.4);*/
+
+}
+
+.normal-button {
+	padding: 2px 5px;
+	color: var(--normal-button-color);
+	background-color: var(--normal-button-background-color);
+	border-color: var(--normal-button-border-color);
+	border-radius: 4px;
+	cursor: pointer;
+}
+.normal-button:hover {
+	color: var(--normal-button-hover-color);
+	background-color: var(--normal-button-hover-background-color);
+	border-color: var(--normal-button-hover-border-color);
+}
+
+/*=====INPUT FEILEDS========================================================================================*/
+
+.inputTypeText{
+	color: var(--inputTypeText-color);
+	background-color: var(--inputTypeText-background-color);
+	border-color: var(--inputTypeText-border-color);
+	border-bottom: var(--inputTypeText-change-border-color);
+	border-right: var(--inputTypeText-change-border-color);
+	border-radius: 10px;
+}
+.inputTypeText:focus {
+	color: var(--inputTypeText-focus-color);
+	background-color: var(--inputTypeText-focus-background-color);
+	border-color:  var(--inputTypeText-focus-border-color);
+}
+.inputTypeSelect{
+	color: var(--inputTypeSelect-color);
+	background-color: var(--inputTypeSelect-background-color);
+	border-color: var(--inputTypeSelect-border-color);
+	border-bottom: var(--inputTypeSelect-change-border-color);
+	border-right: var(--inputTypeSelect-change-border-color);
+	border-radius: 10px;
+}
+.inputTypeSelect:focus {
+	color: var(--inputTypeSelect-focus-color);
+	background-color: var(--inputTypeSelect-focus-background-color);
+	border-color:  var(--inputTypeSelect-focus-border-color);
+}
+
+/*=====SHADOWS=============================================================================================*/
+
+.default-shadow{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),0 6px 20px 0 rgba(0, 0, 0, 0.19) ;
+}
+
+/*=========================================================================================================*/

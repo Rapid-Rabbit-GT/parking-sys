@@ -1,0 +1,18 @@
+DROP TABLE IF EXISTS `sys_user_info`;
+CREATE TABLE IF NOT EXISTS `sys_user_info` (
+  `userId` varchar(16) NOT NULL,
+  `firstName` varchar(32) NOT NULL,
+  `lastName` varchar(32) NOT NULL,
+  `dateOfBirth` date NOT NULL,
+  `gender` varchar(8) NOT NULL,
+  `homeAddress` varchar(64) DEFAULT NULL,
+  `email` varchar(32) DEFAULT NULL,
+  `phoneNumber` varchar(16) DEFAULT NULL,
+  `userName` varchar(32) NOT NULL,
+  `password` varchar(32) NOT NULL,
+  PRIMARY KEY (`userId`)
+);
+
+INSERT INTO `sys_user_info`
+(`userId`, `firstName`, `lastName`, `dateOfBirth`, `gender`, `homeAddress`, `email`, `phoneNumber`, `userName`, `password`) VALUES 
+('CST/1','Sudesh','jewantha','2002-01-01','male','Ranasgalla','sudesh@gmail.com','0701234567','ss','ss')
